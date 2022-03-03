@@ -1,0 +1,172 @@
+{
+	"editor.renderControlCharacters": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'Cascadia Code', 'Cascadia Mono', 'Cascadia (Code|Mono) PL','FontAwesome','Font Awesome 5 Free','Font Awesome 5 Brands','PowerlineSymbols','Powerline Extra Symbols'",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum','calt'",
+    "workbench.productIconTheme": "fluent-icons",
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": true,
+    "sqltools.useNodeRuntime": true,
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": ""
+        }
+    ],
+    "oracledevtools.bookmarkFileFolder": "/home/kali/Oracle/oracle.oracledevtools",
+    "oracledevtools.download.otherFolder": "/home/kali/downloads",
+    "oracledevtools.connectionConfiguration.configFilesFolder": "/home/kali/Oracle/network/admin",
+    "oracledevtools.connectionConfiguration.walletFileFolder": "/home/kali/Oracle/network/admin",
+    "editor.fontSize": 17,
+    "workbench.editorAssociations": {
+        "*.sqlite3": "default"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "git.autofetch": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "database": "mysql",
+            "name": "db",
+            "password": "kali",
+            "username": "root"
+        }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.editor.enablePreview": false,
+    "githubIssues.queries": [
+        {
+            "label": "My Issues",
+            "query": "default"
+        },
+        {
+            "label": "Created Issues",
+            "query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+        }
+	],
+    "tabnine.experimentalAutoImports": true,
+    "workbench.colorTheme": "Dark_as_Darkula",
+    "dateTime.showAMPM": true,
+    "dateTime.showMonth": true,
+    "dateTime.showDayOfWeek": true,
+    "dateTime.showDayOfMonth": true,
+    "dateTime.padDays": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "todohighlight.isEnable": false,
+    "dart.flutterSdkPath": "/home/kali/flutter",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.previewFlutterUiGuides": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "githubPullRequests.queries": [
+        {
+            "label": "Waiting For My Review",
+            "query": "is:open review-requested:${user}"
+        },
+        {
+            "label": "Assigned To Me",
+            "query": "is:open assignee:${user}"
+        },
+        {
+            "label": "Created By Me",
+            "query": "is:open author:${user}"
+        }
+    ],
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "vscode-edge-devtools.mirrorEdits": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "json.schemas": [],
+    "terminal.integrated.fontSize": 16,
+    "redhat.telemetry.enabled": true,
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path.linux": "/home/kali/.vs-kubernetes/tools/helm/linux-amd64/helm"
+    },
+    "atomKeymap.promptV3Features": true,
+    "markdownlint.customRules": [
+        "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
+    ],
+    "hdinsight.azureEnvironment": "Azure",
+    "hdinsight.disableOpenSurveyLink": true,
+    "msiot-vscode-openenclave.systemRequirementsPassed": "1.0.10",
+    "editor.mouseWheelZoom": true,
+    "vscode-edge-devtools.themes": "Dark",
+    "vscode-edge-devtools.headless": true,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "resmon.show.cputemp": true,
+    "resmon.show.disk": true,
+    "resmon.show.network": true,
+    "resmongraphical.battery.style": "Dots",
+    "resmongraphical.cpufreq.allcpus.show": true,
+    "resmongraphical.cpufreq.style": "Geo",
+    "resmongraphical.disk.show": true,
+    "resmongraphical.network.show": true,
+    "resmongraphical.network.style": "HorizontalMeter",
+    "terminal.integrated.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum','calt'",
+    "terminal.integrated.fontFamily": "'Cascadia Code','Cascadia Mono', 'Cascadia (Code|Mono) PL','FontAwesome','Font Awesome 5 Free','Font Awesome 5 Brands','PowerlineSymbols','Powerline Extra Symbols'",
+    "terminal.integrated.enableBell": true,
+    "vscode-edge-devtools.browserFlavor": "Dev",
+    "powermode.enabled": true,
+    "filesize.displayInfoOnTheRightSideOfStatusBar": true,
+    "filesize.use24HourFormat": false,
+    "filesize.useDecimal": true,
+    "editor.cursorBlinking": "phase"
+}
