@@ -1,0 +1,14 @@
+{
+	"settings.foldersSortOrder.description": "Especifica el orden en el que se mostrarán las carpetas en los destinos remotos en el Explorador remoto.",
+	"settings.foldersSortOrder.mru.description": "Mostrar carpetas de forma que las abiertas más recientemente aparezcan en la parte superior",
+	"settings.foldersSortOrder.alphabetical.description": "Mostrar carpetas en orden alfabético",
+	"views.remote.title": "Remoto",
+	"commands.add.title": "Nuevo remoto",
+	"commands.configureSsh.title": "Abrir archivo de configuración SSH",
+	"commands.refresh.title": "Actualizar",
+	"commands.connectToRemoteInNewWindow.title": "Conectar en nueva ventana...",
+	"commands.connectToRemoteInCurrentWindow.title": "Conectar en la ventana actual...",
+	"commands.connectToFolderInNewWindow.title": "Conectar en nueva ventana...",
+	"commands.connectToFolderInCurrentWindow.title": "Conectar en la ventana actual...",
+	"commands.deleteFolderHistoryItem.title": "Quitar de la lista de elementos recientes"
+}

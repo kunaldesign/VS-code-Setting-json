@@ -1,0 +1,154 @@
+{
+	"name": "vscode-systemd-support",
+	"displayName": "Systemd Helper",
+	"description": "Help you write Systemd configuration file on Visual Studio Code",
+	"icon": "out/assets/icon.png",
+	"main": "out/index.js",
+	"browser": "out/index.js",
+	"version": "1.0.1",
+	"publisher": "hangxingliu",
+	"author": "hangxingliu",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.20.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"keywords": [
+		"Linux",
+		"Systemd",
+		"Configurations"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
+	],
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		},
+		"virtualWorkspaces": true
+	},
+	"scripts": {
+		"ts": "ts-node",
+		"build:webpack": "npm run build:syntax && webpack --mode production --devtool hidden-source-map && npm run build:copy",
+		"build:debug": "npm run build:syntax && tsc -p tsconfig.json && npm run build:copy",
+		"build:copy": "cd src && copyfiles '**/*.{tmLanguage,json,png}' ../out",
+		"build:syntax": "ts-node ./src/syntax/generate-tmLanguage.ts",
+		"fetch:directives": "ts-node ./src/utils/fetch-all-directives.ts",
+		"lint": "eslint src",
+		"clean": "rimraf out"
+	},
+	"activationEvents": [
+		"onLanguage:systemd-conf"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "systemd-conf",
+				"aliases": [
+					"Systemd Configuration",
+					"systemd-conf",
+					"systemd-unit-file"
+				],
+				"extensions": [
+					".link",
+					".netdev",
+					".network",
+					".service",
+					".socket",
+					".device",
+					".mount",
+					".automount",
+					".swap",
+					".target",
+					".path",
+					".timer",
+					".snapshot",
+					".slice",
+					".scope"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "systemd-conf",
+				"scopeName": "source.systemd",
+				"path": "./out/syntax/systemd.tmLanguage"
+			}
+		],
+		"configuration": [
+			{
+				"title": "Systemd",
+				"properties": {
+					"systemd.lintDirectiveKeys": {
+						"title": "Enable linter feature for directive keys",
+						"type": "boolean",
+						"default": true,
+						"description": "Give you warnings if any directive keys don't exist in the systemd"
+					},
+					"systemd.customDirectiveKeys": {
+						"title": "Custom directive keys",
+						"type": "array",
+						"default": [
+							"/^[A-Z_]+$/"
+						],
+						"examples": [
+							[
+								"/^[A-Z_]+$/"
+							],
+							[
+								"custom-key"
+							]
+						],
+						"description": "An array contains case-sensitive strings or regex expressions. The extension will add them to the completion list and linter."
+					}
+				}
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/node": ">=14",
+		"@types/vscode": "*",
+		"axios": "^0.24.0",
+		"cheerio": "^1.0.0-rc.10",
+		"colors": "^1.4.0",
+		"copyfiles": "^2.4.1",
+		"https-proxy-agent": "^5.0.0",
+		"rimraf": "^3.0.2",
+		"ts-loader": "^9.2.6",
+		"ts-node": "^10.4.0",
+		"turndown": "^7.1.1",
+		"typescript": "^4.5.3",
+		"vsce": "^2.5.3",
+		"webpack": "^5.65.0",
+		"webpack-cli": "^4.9.1"
+	},
+	"optionalDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.4.0",
+		"@typescript-eslint/parser": "^5.4.0",
+		"eslint": "^8.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hangxingliu/vscode-systemd"
+	},
+	"bugs": {
+		"url": "https://github.com/hangxingliu/vscode-systemd/issues"
+	},
+	"homepage": "https://github.com/hangxingliu/vscode-systemd",
+	"__metadata": {
+		"id": "422d9344-2afe-4ddb-8b9d-f21339087d60",
+		"publisherId": "43f8445f-f00e-4e08-ab0f-21e398616231",
+		"publisherDisplayName": "Liu Yue",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1659361007379
+	}
+}

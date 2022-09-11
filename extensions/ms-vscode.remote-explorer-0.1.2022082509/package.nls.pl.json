@@ -1,0 +1,14 @@
+{
+	"settings.foldersSortOrder.description": "Określa kolejność wyświetlania folderów pod elementami docelowymi SSH w Eksploratorze zdalnym.",
+	"settings.foldersSortOrder.mru.description": "Wyświetl foldery według kolejności ostatnio otwieranych u góry",
+	"settings.foldersSortOrder.alphabetical.description": "Wyświetl foldery w kolejności alfabetycznej",
+	"views.remote.title": "Zdalne",
+	"commands.add.title": "Nowy zdalny",
+	"commands.configureSsh.title": "Otwórz plik konfiguracji SSH",
+	"commands.refresh.title": "Odśwież",
+	"commands.connectToRemoteInNewWindow.title": "Połącz w nowym oknie...",
+	"commands.connectToRemoteInCurrentWindow.title": "Połącz w bieżącym oknie...",
+	"commands.connectToFolderInNewWindow.title": "Połącz w nowym oknie...",
+	"commands.connectToFolderInCurrentWindow.title": "Połącz w bieżącym oknie...",
+	"commands.deleteFolderHistoryItem.title": "Usuń z listy ostatnio używanych"
+}

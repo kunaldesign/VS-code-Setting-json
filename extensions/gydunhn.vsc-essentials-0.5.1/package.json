@@ -1,0 +1,85 @@
+{
+	"name": "vsc-essentials",
+	"displayName": "VSC-Essentials",
+	"description": "Essential extensions for visual studio code",
+	"icon": "img/essentials.png",
+	"galleryBanner": {
+		"color": "#53595e",
+		"theme": "dark"
+	},
+	"license": "LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Gydunhn/VSC-Essentials.git"
+	},
+	"keywords": [
+		"VSC",
+		"VSCode",
+		"Visual Studio",
+		"VSC Essentials",
+		"Essentials",
+		"Git",
+		"GitLens",
+		"Git History",
+		"TODO",
+		"TODO Highlight",
+		"Todo Tree",
+		"Color Highlight",
+		"indent",
+		"indent-rainbow",
+		"Material",
+		"Material Icon",
+		"Material Icon Theme",
+		"Bookmarks",
+		"Path",
+		"Path Intellisense",
+		"Format",
+		"Formatting",
+		"Formatting Toggle",
+		"Markdown",
+		"Markdown All in One",
+		"Terminal",
+		"CodeSnap",
+		"Git Graph",
+		"Gydunhn",
+		"Elite"
+	],
+	"version": "0.5.1",
+	"publisher": "Gydunhn",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionPack": [
+		"eamodio.gitlens",
+		"donjayamanne.githistory",
+		"codezombiech.gitignore",
+		"jgclark.vscode-todo-highlight",
+		"Gruntfuggly.todo-tree",
+		"naumovs.color-highlight",
+		"oderwat.indent-rainbow",
+		"PKief.material-icon-theme",
+		"alefragnani.Bookmarks",
+		"christian-kohler.path-intellisense",
+		"tombonnike.vscode-status-bar-format-toggle",
+		"yzhang.markdown-all-in-one",
+		"formulahendry.terminal",
+		"adpyke.codesnap",
+		"mhutchie.git-graph",
+		"DavidAnson.vscode-markdownlint",
+		"DotJoshJohnson.xml"
+	],
+	"__metadata": {
+		"id": "e0634862-0df0-42a7-bb22-684ea70759f2",
+		"publisherId": "5ba0db5c-54ed-404d-85d3-eb4f8e655371",
+		"publisherDisplayName": "Gydunhn",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1656395912512
+	}
+}

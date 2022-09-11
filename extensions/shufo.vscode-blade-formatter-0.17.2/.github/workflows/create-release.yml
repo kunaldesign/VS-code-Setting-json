@@ -1,0 +1,42 @@
+on:
+  push:
+    branches:
+      - main
+name: create-release
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'
+      - name: Setup Node.js
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Checkout code
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v3
+      - name: Make envfile
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          echo APP_INSIGHT_INSTRUMENT_KEY=${{ secrets.APP_INSIGHT_INSTRUMENT_KEY }} >> .env
+      - run: yarn install
+        if: ${{ steps.release.outputs.release_created }}
+      - run: yarn run compile
+        if: ${{ steps.release.outputs.release_created }}
+      - run: npm install -g vsce
+        if: ${{ steps.release.outputs.release_created }}
+      - run: vsce publish -p $VSCE_TOKEN --yarn
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+      - run: npm install -g ovsx
+        if: ${{ steps.release.outputs.release_created }}
+      - run: ovsx publish -p $OVSX_TOKEN --yarn
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          OVSX_TOKEN: ${{ secrets.OVSX_TOKEN }}

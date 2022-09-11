@@ -1,0 +1,14 @@
+{
+	"settings.foldersSortOrder.description": "Uzak Gezgin'de Uzak Hedefler altındaki klasörlerin görüntülenme sırasını belirtir.",
+	"settings.foldersSortOrder.mru.description": "Klasörleri son açılanlar üstte olacak şekilde sıralayarak görüntüle",
+	"settings.foldersSortOrder.alphabetical.description": "Klasörleri alfabetik sırada görüntüle",
+	"views.remote.title": "Uzak",
+	"commands.add.title": "Yeni Uzak Depo",
+	"commands.configureSsh.title": "SSH Yapılandırma Dosyasını Aç",
+	"commands.refresh.title": "Yenile",
+	"commands.connectToRemoteInNewWindow.title": "Yeni Pencerede Bağlan...",
+	"commands.connectToRemoteInCurrentWindow.title": "Geçerli Pencerede Bağlan...",
+	"commands.connectToFolderInNewWindow.title": "Yeni Pencerede Bağlan...",
+	"commands.connectToFolderInCurrentWindow.title": "Geçerli Pencerede Bağlan...",
+	"commands.deleteFolderHistoryItem.title": "Son Kullanılanlar Listesinden Kaldır"
+}

@@ -1,0 +1,14 @@
+{
+	"settings.foldersSortOrder.description": "Specificare l'ordine in cui visualizzare le cartelle in Destinazioni remote nell’Explorer remoto.",
+	"settings.foldersSortOrder.mru.description": "Visualizzare le cartelle in ordine di apertura dal più recente in cima",
+	"settings.foldersSortOrder.alphabetical.description": "Visualizzare le cartelle in ordine alfabetico",
+	"views.remote.title": "Remoto",
+	"commands.add.title": "Nuovo remoto",
+	"commands.configureSsh.title": "Aprire file di configurazione SSH",
+	"commands.refresh.title": "Aggiorna",
+	"commands.connectToRemoteInNewWindow.title": "Connettersi in una nuova finestra...",
+	"commands.connectToRemoteInCurrentWindow.title": "Connettersi nella finestra corrente...",
+	"commands.connectToFolderInNewWindow.title": "Connettersi in una nuova finestra...",
+	"commands.connectToFolderInCurrentWindow.title": "Connettersi nella finestra corrente...",
+	"commands.deleteFolderHistoryItem.title": "Rimuovere da elenco degli elementi recenti"
+}

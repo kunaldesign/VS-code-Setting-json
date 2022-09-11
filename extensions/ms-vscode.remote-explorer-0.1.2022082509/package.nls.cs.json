@@ -1,0 +1,14 @@
+{
+	"settings.foldersSortOrder.description": "Určuje pořadí, ve kterém se mají zobrazovat složky v části Vzdálené cíle ve Vzdáleném průzkumníku.",
+	"settings.foldersSortOrder.mru.description": "Zobrazit složky v pořadí od naposledy otevřených nahoře",
+	"settings.foldersSortOrder.alphabetical.description": "Zobrazit složky v abecedním pořadí",
+	"views.remote.title": "Vzdálená pošta",
+	"commands.add.title": "Nový vzdálený",
+	"commands.configureSsh.title": "Otevřít konfigurační soubor SSH",
+	"commands.refresh.title": "Aktualizovat",
+	"commands.connectToRemoteInNewWindow.title": "Připojení v novém okně...",
+	"commands.connectToRemoteInCurrentWindow.title": "Připojení v aktuálním okně...",
+	"commands.connectToFolderInNewWindow.title": "Připojení v novém okně...",
+	"commands.connectToFolderInCurrentWindow.title": "Připojení v aktuálním okně...",
+	"commands.deleteFolderHistoryItem.title": "Odebrat ze seznamu naposledy použitých"
+}

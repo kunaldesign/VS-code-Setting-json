@@ -1,0 +1,14 @@
+{
+	"settings.foldersSortOrder.description": "Указывает порядок отображения папок в целевых объектах удаленного репозитория в удаленном обозревателе.",
+	"settings.foldersSortOrder.mru.description": "Отображать папки в порядке последних открытых сверху",
+	"settings.foldersSortOrder.alphabetical.description": "Отображать папки в алфавитном порядке",
+	"views.remote.title": "Удаленный репозиторий",
+	"commands.add.title": "Новый удаленный репозиторий",
+	"commands.configureSsh.title": "Открыть файл SSH Config",
+	"commands.refresh.title": "Обновить",
+	"commands.connectToRemoteInNewWindow.title": "Подключиться в новом окне...",
+	"commands.connectToRemoteInCurrentWindow.title": "Подключиться в текущем окне...",
+	"commands.connectToFolderInNewWindow.title": "Подключиться в новом окне...",
+	"commands.connectToFolderInCurrentWindow.title": "Подключиться в текущем окне...",
+	"commands.deleteFolderHistoryItem.title": "Удалить из списка недавних"
+}
